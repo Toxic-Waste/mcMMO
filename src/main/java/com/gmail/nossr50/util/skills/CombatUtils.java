@@ -468,13 +468,11 @@ public final class CombatUtils {
             }
         }
         else {
-            if (target instanceof Animals) {
-                if (ModUtils.isCustomEntity(target)) {
-                    baseXP = ModUtils.getCustomEntity(target).getXpMultiplier();
-                }
-                else {
-                    baseXP = ExperienceConfig.getInstance().getAnimalsXP();
-                }
+            if (ModUtils.isCustomEntity(target)) {
+                baseXP = ModUtils.getCustomEntity(target).getXpMultiplier();
+            }
+            else if (target instanceof Animals) {
+                baseXP = ExperienceConfig.getInstance().getAnimalsXP();
             }
             else {
                 EntityType type = target.getType();
@@ -500,7 +498,6 @@ public final class CombatUtils {
                         baseXP = ExperienceConfig.getInstance().getCombatXP(type);
                         break;
 
-                    // Temporary workaround for custom entities
                     case UNKNOWN:
                         baseXP = 1.0;
                         break;
@@ -523,9 +520,6 @@ public final class CombatUtils {
                         break;
 
                     default:
-                        if (ModUtils.isCustomEntity(target)) {
-                            baseXP = ModUtils.getCustomEntity(target).getXpMultiplier();
-                        }
                         break;
                 }
             }

@@ -4,7 +4,6 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 
 public class CustomEntity {
-    private int entityID;
     private EntityType entityType;
     private double xpMultiplier;
     private boolean canBeTamed;
@@ -13,8 +12,7 @@ public class CustomEntity {
     private ItemStack callOfTheWildItem;
     private int callOfTheWildAmount;
 
-    public CustomEntity(int entityID, EntityType entityType, double xpMultiplier, boolean canBeTamed, int tamingXP, boolean canBeSummoned, ItemStack callOfTheWildItem, int callOfTheWildAmount) {
-        this.entityID = entityID;
+    public CustomEntity(EntityType entityType, double xpMultiplier, boolean canBeTamed, int tamingXP, boolean canBeSummoned, ItemStack callOfTheWildItem, int callOfTheWildAmount) {
         this.entityType = entityType;
         this.xpMultiplier = xpMultiplier;
         this.canBeTamed = canBeTamed;
@@ -22,14 +20,6 @@ public class CustomEntity {
         this.canBeSummoned = canBeSummoned;
         this.callOfTheWildItem = callOfTheWildItem;
         this.callOfTheWildAmount = callOfTheWildAmount;
-    }
-
-    public int getEntityID() {
-        return entityID;
-    }
-
-    public void setEntityID(int entityID) {
-        this.entityID = entityID;
     }
 
     public EntityType getEntityType() {

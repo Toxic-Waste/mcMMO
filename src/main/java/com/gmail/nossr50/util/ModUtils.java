@@ -2,8 +2,10 @@ package com.gmail.nossr50.util;
 
 import org.bukkit.block.BlockState;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 
+import com.gmail.nossr50.mcMMO;
 import com.gmail.nossr50.config.Config;
 import com.gmail.nossr50.config.mods.CustomArmorConfig;
 import com.gmail.nossr50.config.mods.CustomBlockConfig;
@@ -44,17 +46,25 @@ public final class ModUtils {
     }
 
     public static CustomEntity getCustomEntity(Entity entity) {
-        if (!CustomEntityConfig.getInstance().customEntityIds.contains(entity.getEntityId()) && !CustomEntityConfig.getInstance().customEntityTypes.contains(entity.getType())) {
-            return null;
-        }
-
-        for (CustomEntity customEntity : CustomEntityConfig.getInstance().customEntities) {
-            if ((customEntity.getEntityID() == entity.getEntityId()) && (customEntity.getEntityType() == entity.getType())) {
-                return customEntity;
+        if (entity.getType() == EntityType.UNKNOWN) {
+            try {
+                return CustomEntityConfig.getInstance().customEntityClassMap.get(((Class<?>) entity.getClass().getDeclaredField("entityClass").get(entity)).getName());
+            }
+            catch (NoSuchFieldException e){
+                mcMMO.p.debug("MCPC+ issue.");
+                return null;
+            }
+            catch (IllegalArgumentException e) {
+                mcMMO.p.debug("MCPC+ issue.");
+                return null;
+            }
+            catch (IllegalAccessException e) {
+                mcMMO.p.debug("MCPC+ issue.");
+                return null;
             }
         }
 
-        return null;
+        return CustomEntityConfig.getInstance().customEntityTypeMap.get(entity.getType());
     }
 
     /**
@@ -158,7 +168,7 @@ public final class ModUtils {
     }
 
     public static boolean isCustomEntity(Entity entity) {
-        return customEntitiesEnabled && CustomEntityConfig.getInstance().customEntityIds.contains(entity.getEntityId());
+        return customEntitiesEnabled && CustomEntityConfig.getInstance().customEntityTypes.contains(entity.getType());
     }
 
     /**
