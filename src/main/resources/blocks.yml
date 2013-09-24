@@ -6,7 +6,7 @@ Excavation:
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -14,7 +14,7 @@ Excavation:
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -27,7 +27,7 @@ Herbalism:
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -35,7 +35,7 @@ Herbalism:
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -50,7 +50,7 @@ Mining:
         Is_Ore: true
         Tier: 1
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -60,7 +60,7 @@ Mining:
         Is_Ore: true
         Tier: 1
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -74,7 +74,7 @@ Woodcutting:
         XP_Gain: 99
         Is_Log: true
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
@@ -83,7 +83,7 @@ Woodcutting:
         XP_Gain: 99
         Is_Log: true
         Drop_Item: false
-        Drop_Item_ID: 999
+        Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
