@@ -40,11 +40,7 @@ public final class ModUtils {
      * @return the block if it exists, null otherwise
      */
     public static CustomBlock getCustomBlock(BlockState blockState) {
-        if (customBlocksEnabled) {
-            return CustomBlockConfig.getInstance().customBlockMap.get(blockState.getData());
-        }
-
-        return null;
+        return CustomBlockConfig.getInstance().customBlockMap.get(blockState.getData());
     }
 
     public static CustomEntity getCustomEntity(Entity entity) {
