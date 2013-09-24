@@ -3,7 +3,6 @@
 ###
 Excavation:
     Block_1:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
@@ -12,7 +11,6 @@ Excavation:
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
     Block_2:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
@@ -26,7 +24,6 @@ Excavation:
 ###
 Herbalism:
     Block_1:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
@@ -35,7 +32,6 @@ Herbalism:
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
     Block_2:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Drop_Item: false
@@ -49,7 +45,6 @@ Herbalism:
 ###
 Mining:
     Block_1:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Is_Ore: true
@@ -60,7 +55,6 @@ Mining:
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
     Block_2:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Is_Ore: true
@@ -76,7 +70,6 @@ Mining:
 ###
 Woodcutting:
     Block_1:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Is_Log: true
@@ -86,7 +79,6 @@ Woodcutting:
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
     Block_2:
-        ID: 999
         Data_Value: 0
         XP_Gain: 99
         Is_Log: true
@@ -102,8 +94,6 @@ Woodcutting:
 ###
 Ability_Blocks:
     Block_1:
-        ID: 999
         Data_Value: 0
     Block_2:
-        ID: 999
         Data_Value: 0        
