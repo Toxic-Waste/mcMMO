@@ -3,7 +3,6 @@ package com.gmail.nossr50.util;
 import org.bukkit.block.BlockState;
 import org.bukkit.entity.Entity;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.material.MaterialData;
 
 import com.gmail.nossr50.config.Config;
 import com.gmail.nossr50.config.mods.CustomArmorConfig;
@@ -149,11 +148,7 @@ public final class ModUtils {
      * @return true if the item is a custom tool, false otherwise
      */
     public static boolean isCustomTool(ItemStack item) {
-        if (customToolsEnabled && CustomToolConfig.getInstance().customTool.contains(item.getType())) {
-            return true;
-        }
-
-        return false;
+        return customToolsEnabled && CustomToolConfig.getInstance().customTool.contains(item.getType());
     }
 
     /**
@@ -163,19 +158,11 @@ public final class ModUtils {
      * @return true if the item is custom armor, false otherwise
      */
     public static boolean isCustomArmor(ItemStack item) {
-        if (customArmorEnabled && CustomArmorConfig.getInstance().customArmor.contains(item.getType())) {
-            return true;
-        }
-
-        return false;
+        return customArmorEnabled && CustomArmorConfig.getInstance().customArmor.contains(item.getType());
     }
 
     public static boolean isCustomEntity(Entity entity) {
-        if (customEntitiesEnabled && CustomEntityConfig.getInstance().customEntityIds.contains(entity.getEntityId())) {
-            return true;
-        }
-
-        return false;
+        return customEntitiesEnabled && CustomEntityConfig.getInstance().customEntityIds.contains(entity.getEntityId());
     }
 
     /**
