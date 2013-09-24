@@ -60,14 +60,16 @@ public class CustomBlockConfig extends ConfigLoader {
         Set<String> skillConfigSet = skillSection.getKeys(false);
 
         for (String blockName : skillConfigSet) {
-            Material blockMaterial = Material.matchMaterial(blockName);
+            String[] blockInfo = blockName.split("[|]");
+
+            Material blockMaterial = Material.matchMaterial(blockInfo[0]);
 
             if (blockMaterial == null) {
                 plugin.getLogger().warning("Invalid material name. This item will be skipped.");
                 continue;
             }
 
-            byte blockData = (byte) config.getInt(skillType + "." + blockName + ".Data_Value");
+            byte blockData = Byte.valueOf(blockInfo[1]);
             MaterialData blockMaterialData = new MaterialData(blockMaterial, blockData);
             blockList.add(blockMaterialData);
 

@@ -2,16 +2,14 @@
 #  Settings for Custom Excavation Blocks
 ###
 Excavation:
-    Block_1:
-        Data_Value: 0
+    Block_1|0:
         XP_Gain: 99
         Drop_Item: false
         Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
-    Block_2:
-        Data_Value: 0
+    Block_2|0:
         XP_Gain: 99
         Drop_Item: false
         Drop_Item_Name: BLOCK_DROP
@@ -23,16 +21,14 @@ Excavation:
 #  Settings for Custom Herbalism Blocks
 ###
 Herbalism:
-    Block_1:
-        Data_Value: 0
+    Block_1|0:
         XP_Gain: 99
         Drop_Item: false
         Drop_Item_Name: BLOCK_DROP
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
-    Block_2:
-        Data_Value: 0
+    Block_2|0:
         XP_Gain: 99
         Drop_Item: false
         Drop_Item_Name: BLOCK_DROP
@@ -44,8 +40,7 @@ Herbalism:
 #  Settings for Custom Mining Blocks
 ###
 Mining:
-    Block_1:
-        Data_Value: 0
+    Block_1|0:
         XP_Gain: 99
         Is_Ore: true
         Tier: 1
@@ -54,8 +49,7 @@ Mining:
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
-    Block_2:
-        Data_Value: 0
+    Block_2|0:
         XP_Gain: 99
         Is_Ore: true
         Tier: 1
@@ -69,8 +63,7 @@ Mining:
 #  Settings for Custom Woodcutting Blocks
 ###
 Woodcutting:
-    Block_1:
-        Data_Value: 0
+    Block_1|0:
         XP_Gain: 99
         Is_Log: true
         Drop_Item: false
@@ -78,8 +71,7 @@ Woodcutting:
         Drop_Item_Data_Value: 0
         Min_Drop_Item_Amount: 1
         Max_Drop_Item_Amount: 1
-    Block_2:
-        Data_Value: 0
+    Block_2|0:
         XP_Gain: 99
         Is_Log: true
         Drop_Item: false
@@ -93,7 +85,5 @@ Woodcutting:
 #  (These blocks don't trigger abilities)
 ###
 Ability_Blocks:
-    Block_1:
-        Data_Value: 0
-    Block_2:
-        Data_Value: 0        
+    Block_1|0:
+    Block_2|0:
